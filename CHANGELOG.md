@@ -3,6 +3,136 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.3](https://github.com/WTTJ/welcome-ui/compare/v2.6.2...v2.6.3) (2020-10-19)
+
+
+### Bug Fixes
+
+* updating icon font ([#793](https://github.com/WTTJ/welcome-ui/issues/793)) ([e89fd19](https://github.com/WTTJ/welcome-ui/commit/e89fd1942081bcc2975c4cf999ed403d202aabb3))
+
+
+
+
+
+## [2.6.1](https://github.com/WTTJ/welcome-ui/compare/v2.6.0...v2.6.1) (2020-10-13)
+
+
+### Bug Fixes
+
+* **picker:** add dataTestId property ([#789](https://github.com/WTTJ/welcome-ui/issues/789)) ([bc52e0f](https://github.com/WTTJ/welcome-ui/commit/bc52e0fe3a6b7996c5965205a8b061bb1137932a))
+* modal header and footer style ([#788](https://github.com/WTTJ/welcome-ui/issues/788)) ([9501512](https://github.com/WTTJ/welcome-ui/commit/95015120a2801bb94c9603293547ca20fae8fbe9))
+
+
+
+
+
+# [2.6.0](https://github.com/WTTJ/welcome-ui/compare/v2.5.2...v2.6.0) (2020-10-12)
+
+
+### Features
+
+* add in progress & new candidate icon ([#787](https://github.com/WTTJ/welcome-ui/issues/787)) ([954c72d](https://github.com/WTTJ/welcome-ui/commit/954c72d7ca3fee8f393e3479e2ea83ff4e2563dd))
+* burn icon ([#786](https://github.com/WTTJ/welcome-ui/issues/786)) ([9dd207e](https://github.com/WTTJ/welcome-ui/commit/9dd207e96c7d620d0826584e251bdf8fd4434522))
+
+
+
+
+
+## [2.5.2](https://github.com/WTTJ/welcome-ui/compare/v2.5.1...v2.5.2) (2020-10-06)
+
+
+### Bug Fixes
+
+* support autofocus prop when minChars=0 ([#785](https://github.com/WTTJ/welcome-ui/issues/785)) ([019021d](https://github.com/WTTJ/welcome-ui/commit/019021d4dac890a413591f5934b79d83285b6282))
+
+
+
+
+
+## [2.5.1](https://github.com/WTTJ/welcome-ui/compare/v2.5.0...v2.5.1) (2020-10-05)
+
+
+### Bug Fixes
+
+* allow search to make suggestions ([#784](https://github.com/WTTJ/welcome-ui/issues/784)) ([08d5155](https://github.com/WTTJ/welcome-ui/commit/08d5155606ef934f758a330f05a0a9ca67c18792))
+
+
+
+
+
+# [2.5.0](https://github.com/WTTJ/welcome-ui/compare/v2.4.1...v2.5.0) (2020-09-24)
+
+
+### Bug Fixes
+
+* **files:** getMimeType problem with dot on name ([#780](https://github.com/WTTJ/welcome-ui/issues/780)) ([af2e8b2](https://github.com/WTTJ/welcome-ui/commit/af2e8b267fc7904faa97478bc5ddfe779d0a31d0))
+
+
+### Features
+
+* **icons:** add ppt icon ([#782](https://github.com/WTTJ/welcome-ui/issues/782)) ([577f662](https://github.com/WTTJ/welcome-ui/commit/577f6626c6546b4fdf8b207b55a06f9f5e91a4da))
+
+
+
+
+
+## [2.4.1](https://github.com/WTTJ/welcome-ui/compare/v2.4.0...v2.4.1) (2020-09-22)
+
+
+### Bug Fixes
+
+* do not crash when autofocus is enabled and ref is not already set ([#781](https://github.com/WTTJ/welcome-ui/issues/781)) ([178098c](https://github.com/WTTJ/welcome-ui/commit/178098c0338497384cb460ca85c21b0cf1490f97))
+
+
+
+
+
+# [2.4.0](https://github.com/WTTJ/welcome-ui/compare/v2.3.0...v2.4.0) (2020-09-11)
+
+
+### Features
+
+* **fields:** export getMimeType ([#779](https://github.com/WTTJ/welcome-ui/issues/779)) ([2d157cd](https://github.com/WTTJ/welcome-ui/commit/2d157cd540cffb1e9131ddf85fc13c3261c0dd12))
+* **file-upload:** add custom Preview ([#778](https://github.com/WTTJ/welcome-ui/issues/778)) ([8b678d9](https://github.com/WTTJ/welcome-ui/commit/8b678d9320a6fd8a5689e9b1ec3d5d7108992b6a))
+* optgroups on search & select component ([#771](https://github.com/WTTJ/welcome-ui/issues/771)) ([0ea0fd7](https://github.com/WTTJ/welcome-ui/commit/0ea0fd72c4b159e6690b79a40b112b4b2ec9610c))
+
+
+
+
+
+# [2.3.0](https://github.com/WTTJ/welcome-ui/compare/v2.2.0...v2.3.0) (2020-09-08)
+
+
+### Features
+
+* **icons:** add new attachements icon ([#776](https://github.com/WTTJ/welcome-ui/issues/776)) ([64b8157](https://github.com/WTTJ/welcome-ui/commit/64b8157441b7541780df410893733938c637857d))
+
+
+
+
+
+# [2.2.0](https://github.com/WTTJ/welcome-ui/compare/v2.1.4...v2.2.0) (2020-09-08)
+
+
+### Features
+
+* **markdown-editor:** add actions ([#775](https://github.com/WTTJ/welcome-ui/issues/775)) ([2c6e599](https://github.com/WTTJ/welcome-ui/commit/2c6e5994d5a1d7d9d2247a34beaf56e035c56266))
+
+
+
+
+
+## [2.1.4](https://github.com/WTTJ/welcome-ui/compare/v2.1.3...v2.1.4) (2020-09-02)
+
+
+### Features
+
+* add release iconfont to s3 ([#773](https://github.com/WTTJ/welcome-ui/issues/773)) ([2bb6ef6](https://github.com/WTTJ/welcome-ui/commit/2bb6ef63e8ed99e481682f28e80d7efcc1109ffd))
+
+
+
+
+
 ## [2.1.3](https://github.com/WTTJ/welcome-ui/compare/v2.1.2...v2.1.3) (2020-08-27)
 
 

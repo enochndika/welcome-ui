@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useMemo, useState } from 'react'
+import React, { forwardRef, Fragment, useEffect, useMemo, useState } from 'react'
 import { arrayOf, bool, func, number, oneOf, oneOfType, string } from 'prop-types'
 import Downshift from 'downshift'
 import matchSorter from 'match-sorter'
@@ -59,6 +59,8 @@ export const Select = forwardRef(
       variant,
       allowUnselectFromList,
       disableCloseOnSelect,
+      groupsEnabled,
+      renderGroupHeader,
       ...rest
     },
     ref
@@ -86,9 +88,10 @@ export const Select = forwardRef(
     // Autofocus
     useEffect(() => {
       if (autoFocus) {
-        ref.current.focus()
+        ref?.current?.focus()
+        isSearchable && setIsOpen(true)
       }
-    }, [autoFocus, ref])
+    }, [isSearchable, autoFocus, ref])
 
     // Ensure values are controlled by parent
     useEffect(() => {
@@ -215,7 +218,7 @@ export const Select = forwardRef(
           )
           const ArrowIcon = (
             <S.DropDownIndicator
-              data-testid={`${dataTestId}-arrow-icon`}
+              data-testid={dataTestId && `${dataTestId}-arrow-icon`}
               disabled={disabled}
               isOpen={isOpen}
               size={size}
@@ -271,24 +274,62 @@ export const Select = forwardRef(
               </S.InputWrapper>
               {isShowMenu && (
                 <S.Menu {...getMenuProps()}>
-                  {options.map((item, index) => {
-                    const isItemSelected = isValueSelected(item.value, selected)
-                    return (
-                      <S.Item
-                        key={item.value}
-                        {...getItemProps({
-                          index,
-                          isHighlighted: highlightedIndex === index,
-                          isSelected: isItemSelected,
-                          allowUnselectFromList,
-                          isMultiple,
-                          item
-                        })}
-                      >
-                        {renderItem(item, isItemSelected)}
-                      </S.Item>
-                    )
-                  })}
+                  {
+                    options.reduce(
+                      (acc, result, resultIndex) => {
+                        if (groupsEnabled) {
+                          acc.itemsToRender.push(
+                            // eslint-disable-next-line react/no-array-index-key
+                            <Fragment key={resultIndex}>
+                              {renderGroupHeader(result)}
+                              {result.options &&
+                                result.options.map((option, optionIndex) => {
+                                  const index = acc.itemIndex++
+                                  const isItemSelected = isValueSelected(option.value, selected)
+                                  return (
+                                    <S.Item
+                                      // eslint-disable-next-line react/no-array-index-key
+                                      key={optionIndex}
+                                      {...getItemProps({
+                                        index,
+                                        isHighlighted: highlightedIndex === index,
+                                        isSelected: isItemSelected,
+                                        allowUnselectFromList,
+                                        isMultiple,
+                                        item: option
+                                      })}
+                                    >
+                                      {renderItem(option, isItemSelected)}
+                                    </S.Item>
+                                  )
+                                })}
+                            </Fragment>
+                          )
+                        } else {
+                          const isItemSelected = isValueSelected(result.value, selected)
+                          acc.itemsToRender.push(
+                            <S.Item
+                              // eslint-disable-next-line react/no-array-index-key
+                              key={resultIndex}
+                              {...getItemProps({
+                                index: resultIndex,
+                                isHighlighted: highlightedIndex === resultIndex,
+                                isSelected: isItemSelected,
+                                allowUnselectFromList,
+                                isMultiple,
+                                item: result
+                              })}
+                            >
+                              {renderItem(result, isItemSelected)}
+                            </S.Item>
+                          )
+                        }
+
+                        return acc
+                      },
+                      { itemsToRender: [], itemIndex: 0 }
+                    ).itemsToRender
+                  }
                   {isShowCreate && inputValue.length && (
                     <S.Item
                       key="add"
@@ -324,6 +365,7 @@ Select.propTypes /* remove-proptypes */ = {
   autoFocus: bool,
   disableCloseOnSelect: bool,
   disabled: bool,
+  groupsEnabled: bool,
   icon: oneOfType(COMPONENT_TYPE),
   id: string,
   isClearable: bool,
@@ -337,14 +379,15 @@ Select.propTypes /* remove-proptypes */ = {
   onCreate: func,
   onFocus: func,
   onKeyDown: func,
-  onKeyUp: func,
   /** [{
     label: `string` | `number`,
     value: `string` | `number`
   }] */
+  onKeyUp: func,
   options: arrayOf(OPTIONS_TYPE),
   placeholder: string,
   renderCreateItem: func,
+  renderGroupHeader: func,
   renderItem: func,
   renderMultiple: func,
   size: oneOf(SIZES_TYPE),

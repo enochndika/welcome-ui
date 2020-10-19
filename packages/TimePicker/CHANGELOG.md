@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.3](https://github.com/WTTJ/welcome-ui/compare/v2.6.2...v2.6.3) (2020-10-19)
+
+**Note:** Version bump only for package @welcome-ui/time-picker
+
+
+
+
+
+## [2.6.1](https://github.com/WTTJ/welcome-ui/compare/v2.6.0...v2.6.1) (2020-10-13)
+
+**Note:** Version bump only for package @welcome-ui/time-picker
+
+
+
+
+
+## [2.4.1](https://github.com/WTTJ/welcome-ui/compare/v2.4.0...v2.4.1) (2020-09-22)
+
+**Note:** Version bump only for package @welcome-ui/time-picker
+
+
+
+
+
+# [2.4.0](https://github.com/WTTJ/welcome-ui/compare/v2.3.0...v2.4.0) (2020-09-11)
+
+**Note:** Version bump only for package @welcome-ui/time-picker
+
+
+
+
+
 ## [2.1.3](https://github.com/WTTJ/welcome-ui/compare/v2.1.2...v2.1.3) (2020-08-27)
 
 **Note:** Version bump only for package @welcome-ui/time-picker

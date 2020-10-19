@@ -5,7 +5,6 @@ const fs = require('fs')
 const util = require('util')
 
 const argv = require('yargs').argv
-const css = require('css')
 const difference = require('lodash.difference')
 const webfontsGenerator = require('webfonts-generator')
 require('colors')
@@ -210,13 +209,29 @@ const writeIconFont = files => {
     return files
   }
 
+  // Add new icons to unicodeMap (adding one to hex value for each new icon)
+  const newUnicodeMap = newIcons.reduce((arr, key) => {
+    const lastUnicodeEntry = arr[Object.keys(unicodeMap).pop()]
+    const newUnicodeEntry = (parseInt(lastUnicodeEntry, 16) + 0x1).toString(16)
+    arr[key] = `\f${newUnicodeEntry}`
+    return arr
+  }, unicodeMap)
+
+  // Write the updated unicode map
+  const fileContent = `${JSON.stringify(newUnicodeMap, 0, 2)}
+`
+  fs.writeFileSync(unicodeFile, fileContent)
+
+  console.debug(unicodeFile)
+
   // Generate web fonts
   webfontsGenerator(
     {
       files: filteredFiles.map(file => `${INPUT_PATH}/${file.key}.svg`),
       dest: `${ICON_FONT_PATH}/fonts`,
-      types: ['woff', 'woff2', 'ttf'],
-      fontName: 'welcome-icon-font'
+      fontName: 'welcome-icon-font',
+      css: false,
+      codepoints: newUnicodeMap
     },
     (error, result) => {
       if (error) {

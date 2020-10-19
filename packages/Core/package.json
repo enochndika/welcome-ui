@@ -1,6 +1,6 @@
 {
   "name": "@welcome-ui/core",
-  "version": "2.0.2",
+  "version": "2.6.3",
   "description": "welcome-ui: Core utils",
   "main": "dist/core.cjs.js",
   "module": "dist/core.es.js",
@@ -36,7 +36,6 @@
   },
   "dependencies": {
     "@welcome-ui/utils": "^2.0.2",
-    "polished": "^3.4.1",
     "ramda": "^0.27.0"
   },
   "peerDependencies": {

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/WTTJ/welcome-ui/compare/v2.4.1...v2.5.0) (2020-09-24)
+
+
+### Bug Fixes
+
+* **files:** getMimeType problem with dot on name ([#780](https://github.com/WTTJ/welcome-ui/issues/780)) ([af2e8b2](https://github.com/WTTJ/welcome-ui/commit/af2e8b267fc7904faa97478bc5ddfe779d0a31d0))
+
+
+
+
+
+# [2.4.0](https://github.com/WTTJ/welcome-ui/compare/v2.3.0...v2.4.0) (2020-09-11)
+
+
+### Features
+
+* **fields:** export getMimeType ([#779](https://github.com/WTTJ/welcome-ui/issues/779)) ([2d157cd](https://github.com/WTTJ/welcome-ui/commit/2d157cd540cffb1e9131ddf85fc13c3261c0dd12))
+
+
+
+
+
+# [2.3.0](https://github.com/WTTJ/welcome-ui/compare/v2.2.0...v2.3.0) (2020-09-08)
+
+**Note:** Version bump only for package @welcome-ui/files
+
+
+
+
+
 ## [2.0.2](https://github.com/WTTJ/welcome-ui/compare/v2.0.1...v2.0.2) (2020-08-04)
 
 

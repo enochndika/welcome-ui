@@ -186,5 +186,9 @@
   "xls": "\f1b9",
   "xlsx": "\f1ba",
   "youtube": "\f1bb",
-  "zip": "\f1bc"
+  "zip": "\f1bc",
+  "burn": "\f1bd",
+  "in_progress_candidate": "\f1be",
+  "new_candidate": "\f1bf",
+  "ppt": "\f1c0"
 }

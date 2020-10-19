@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.1](https://github.com/WTTJ/welcome-ui/compare/v2.6.0...v2.6.1) (2020-10-13)
+
+
+### Bug Fixes
+
+* **picker:** add dataTestId property ([#789](https://github.com/WTTJ/welcome-ui/issues/789)) ([bc52e0f](https://github.com/WTTJ/welcome-ui/commit/bc52e0fe3a6b7996c5965205a8b061bb1137932a))
+
+
+
+
+
+## [2.4.1](https://github.com/WTTJ/welcome-ui/compare/v2.4.0...v2.4.1) (2020-09-22)
+
+
+### Bug Fixes
+
+* do not crash when autofocus is enabled and ref is not already set ([#781](https://github.com/WTTJ/welcome-ui/issues/781)) ([178098c](https://github.com/WTTJ/welcome-ui/commit/178098c0338497384cb460ca85c21b0cf1490f97))
+
+
+
+
+
+# [2.4.0](https://github.com/WTTJ/welcome-ui/compare/v2.3.0...v2.4.0) (2020-09-11)
+
+
+### Features
+
+* optgroups on search & select component ([#771](https://github.com/WTTJ/welcome-ui/issues/771)) ([0ea0fd7](https://github.com/WTTJ/welcome-ui/commit/0ea0fd72c4b159e6690b79a40b112b4b2ec9610c))
+
+
+
+
+
 ## [2.0.2](https://github.com/WTTJ/welcome-ui/compare/v2.0.1...v2.0.2) (2020-08-04)
 
 
