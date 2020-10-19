@@ -233,29 +233,12 @@ const writeIconFont = files => {
       css: false,
       codepoints: newUnicodeMap
     },
-    (error, result) => {
+    error => {
       if (error) {
         console.error('Fail!', error)
-        return
+      } else {
+        console.log('Success'.green, 'Writing icon font')
       }
-      console.log('Success'.green, 'Writing icon font')
-      // Parse CSS to get unicode JSON
-      const styles = result.generateCss().toString()
-      const parsed = css.parse(styles)
-      const rules = parsed.stylesheet.rules
-
-      const newUnicodeMap = rules
-        .filter(rule => rule && rule.selectors && rule.selectors[0].startsWith('.icon-'))
-        .reduce((prev, rule) => {
-          const key = rule.selectors[0].replace(/\.icon-|:before/g, '')
-          const value = JSON.parse(rule.declarations[0].value).slice(0)
-          return { ...prev, [key]: value }
-        }, {})
-
-      // Write the updated unicode map
-      const fileContent = `${JSON.stringify(newUnicodeMap, 0, 2)}
-`
-      fs.writeFileSync(unicodeFile, fileContent)
     }
   )
 
