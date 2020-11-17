@@ -3,6 +3,103 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/WTTJ/welcome-ui/compare/v2.10.0...v2.11.0) (2020-11-16)
+
+
+### Features
+
+* **icons:** add 24 new icons ([#805](https://github.com/WTTJ/welcome-ui/issues/805)) ([a5801af](https://github.com/WTTJ/welcome-ui/commit/a5801afdf9cea5811061206ef579aea5919e4198))
+
+
+
+
+
+# [2.10.0](https://github.com/WTTJ/welcome-ui/compare/v2.9.0...v2.10.0) (2020-11-03)
+
+
+### Features
+
+* **toastr:** add your custom onClose function ([#804](https://github.com/WTTJ/welcome-ui/issues/804)) ([341b72d](https://github.com/WTTJ/welcome-ui/commit/341b72d36b7ef5c8fde590efb98f60a6e7e22c98))
+
+
+
+
+
+# [2.9.0](https://github.com/WTTJ/welcome-ui/compare/v2.8.2...v2.9.0) (2020-11-02)
+
+
+### Features
+
+* **popover:** add possibility to add timeout on show on trigger hover ([#803](https://github.com/WTTJ/welcome-ui/issues/803)) ([252e88d](https://github.com/WTTJ/welcome-ui/commit/252e88dd2e650d233d350980c3808f73f1bbeebb))
+
+
+
+
+
+## [2.8.2](https://github.com/WTTJ/welcome-ui/compare/v2.8.1...v2.8.2) (2020-11-02)
+
+
+### Bug Fixes
+
+* **files:** add svg and ico mime types ([#802](https://github.com/WTTJ/welcome-ui/issues/802)) ([a06e09f](https://github.com/WTTJ/welcome-ui/commit/a06e09fce5be83c1fc15865251167ecb3180ebde))
+
+
+
+
+
+# [2.8.0](https://github.com/WTTJ/welcome-ui/compare/v2.7.3...v2.8.0) (2020-10-27)
+
+
+### Features
+
+* **popover:** allow opening on hover ([#799](https://github.com/WTTJ/welcome-ui/issues/799)) ([a261911](https://github.com/WTTJ/welcome-ui/commit/a261911b91a52a366ed2c705b8fd5456666ff4c5))
+* add Popover component ([#797](https://github.com/WTTJ/welcome-ui/issues/797)) ([5442882](https://github.com/WTTJ/welcome-ui/commit/544288263d699ad1bc2e42eeb49f75aeb8b5100a))
+
+
+
+
+
+## [2.7.3](https://github.com/WTTJ/welcome-ui/compare/v2.7.2...v2.7.3) (2020-10-23)
+
+
+### Bug Fixes
+
+* **file-drop:** don't crash if invalid url passed to filedrop ([#798](https://github.com/WTTJ/welcome-ui/issues/798)) ([04c9c19](https://github.com/WTTJ/welcome-ui/commit/04c9c1998b31b4c8f68760702da890b504780a81))
+
+
+
+
+
+## [2.7.2](https://github.com/WTTJ/welcome-ui/compare/v2.7.1...v2.7.2) (2020-10-22)
+
+**Note:** Version bump only for package @welcome-ui/repo
+
+
+
+
+
+## [2.7.1](https://github.com/WTTJ/welcome-ui/compare/v2.7.0...v2.7.1) (2020-10-20)
+
+
+### Bug Fixes
+
+* put back normalize for now ([#795](https://github.com/WTTJ/welcome-ui/issues/795)) ([2ec3e74](https://github.com/WTTJ/welcome-ui/commit/2ec3e744103f87d0e31ea6ff7fe99918987eccb7))
+
+
+
+
+
+# [2.7.0](https://github.com/WTTJ/welcome-ui/compare/v2.6.3...v2.7.0) (2020-10-20)
+
+
+### Features
+
+* add useReset on WuiProvider for GlobalStyle ([#794](https://github.com/WTTJ/welcome-ui/issues/794)) ([9e21bb4](https://github.com/WTTJ/welcome-ui/commit/9e21bb454dab54d60380fb959f5fe2a4fcca560b))
+
+
+
+
+
 ## [2.6.3](https://github.com/WTTJ/welcome-ui/compare/v2.6.2...v2.6.3) (2020-10-19)
 
 
